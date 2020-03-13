@@ -1,0 +1,107 @@
+	tr td{
+			border: solid;
+      		font-family: "Comic Sans MS", cursive, sans-serif;
+      		text-align: center;
+		}
+
+	tr th{
+		border: solid;
+		}
+
+	table{
+		border-collapse: collapse;
+		border: solid;
+	}
+
+	div{
+		border: 5px red solid;
+	}
+
+	input{
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-top: 7px;
+          padding-bottom: 7px;
+          border: groove;
+          border-radius: 10px;
+        }
+
+    select{
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-top: 4px;
+          padding-bottom: 4px;    	
+    }
+
+	#updateLeft{
+		text-align: center;
+		position: relative;
+		left: 90px;
+	}
+
+	.column{
+		  float:left;
+ 		  height: 600px;
+	      padding:0 10px;	
+	}
+
+	#leftDiv{
+      	width:45%
+      	height:600px;
+	}
+
+	#addUserDiv{
+		width: 100%;
+		height: 180px; 
+	}
+
+	#displayDiv{
+		width: 100%;
+		height: 65%;
+	}
+
+
+
+
+	#splitFormDiv{
+		width: 45%;
+		height: 600px;
+	}
+
+
+
+	#addUserTable{
+		width: 100%;
+		height: 100%;
+
+	}
+
+	#displayTable{
+		width: 100%;
+		height: 100%;
+	}
+
+	#splitFormTable{
+		width: 100%;
+		height: 50%;
+	}
+
+	.btn
+        {
+          padding-left: 18px;
+          padding-right: 18px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          color: blue;
+          font-weight: bolder;
+          letter-spacing: 3px;
+          width: 90%;
+          margin-left: 5%;
+          text-align: center;
+        }
+
+
+     .btn:hover {
+          background-color: black;
+          color: white;
+        }

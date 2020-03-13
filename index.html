@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Splitwise-Home</title>
+<link rel="stylesheet" href="cssFile.css">
+<script type="text/javascript" src="jsFile.js"></script>
+</head>
+
+<body>
+
+<div class="column" id="leftDiv">	
+<!--	addUser div	-->
+<div id="addUserDiv">
+<form name="addUserForm">
+<table id="addUserTable">
+	<tr><th>Add User</th></tr>
+	<tr>
+		<td>Enter user's name : <input id="name" type="text" name="uname" onkeypress="return addUser(event)"></td>
+	</tr>
+ 
+	<tr>
+		<!--<td><button  class="btn" type="button" onclick="addUser()">Add User</button></td>-->
+	</tr>
+</table>
+</form>
+</div>
+
+
+<!--	display div	-->
+<div id="displayDiv">
+	
+<table id="displayTable">
+	
+<tr>
+	<th>User Name</th>
+	<th>Owed / Owes you</th>
+</tr>
+
+</table>
+
+</div>
+</div>
+
+
+<div class="column" id="splitFormDiv">
+<table id="splitFormTable">	
+
+<form id="submitAmountForm">
+	<tr>
+		<td>Description : </td>
+		<td colspan="2"><input id="desc" type="text" name="desc"></td>
+	</tr>
+
+	<tr>
+		<td>Amount : </td>
+		<td colspan="2"><input id="amount" type="number" name="amount" onchange='setAmount(this)'></td>
+	</tr>
+
+	<tr>
+		<td>Users : </td>
+
+
+		<td>
+			<select id="divideSelect">
+                <option value="equally" selected>Equally</option>
+                <option value="unequally">Unequally</option>
+            </select>
+
+            <button class="btn" type="button" onclick="submitAmount(this)">Split Amount</button>
+        </td>
+	</tr>
+
+    <tr>
+    	<td>Paid By : </td>
+    	<td colspan="2"><select id="paidBySelect">
+
+    		</select>
+    	</td>
+	</tr>
+
+    <tr>
+    	<td colspan="3"><button class="btn" type="button" onclick="addExpense()">Add Expense</button></td>
+    </tr>
+
+</form>
+</table>
+</div>
+
+</body>
+</html>
